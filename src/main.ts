@@ -8,8 +8,7 @@ window.addEventListener('load', () => {
     const link = document.createElement('a');
     link.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
 
-    console.log(link);
-
+    // console.log(link);
 
     link.click();
   });

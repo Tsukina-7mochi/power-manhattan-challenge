@@ -38,4 +38,14 @@ button#tweet {
   padding: 5px 20px;
   font-size: 20px;
   color: white;
+
+  &:hover {
+    background-color: darken($twitter-color, 5);
+    border: 1px solid darken($twitter-color, 5);
+  }
+
+  &:active {
+    background-color: darken($twitter-color, 10);
+    border: 1px solid darken($twitter-color, 10);
+  }
 }
