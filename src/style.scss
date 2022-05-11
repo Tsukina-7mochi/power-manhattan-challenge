@@ -1,0 +1,41 @@
+@import url(https://use.fontawesome.com/releases/v6.1.1/css/all.css);
+
+$twitter-color: #1da1f2;
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $twitter-color;
+  color: white;
+
+  h1 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button#tweet {
+  background-color: $twitter-color;
+  border: 1px solid $twitter-color;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 20px;
+  color: white;
+}
