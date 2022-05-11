@@ -14,11 +14,11 @@ const generate = function() {
     if(typeof charOrArr === 'string') {
       result += charOrArr;
     } else {
-      result += charOrArr[Math.max(0, Math.min(charOrArr.length - 1, Math.floor(chi2Random(1))))];
+      result += charOrArr[Math.max(0, Math.min(charOrArr.length - 1, Math.floor(chi2Random(1) / 2)))];
     }
   }
 
-  result += suffix[Math.max(0, Math.min(suffix.length - 1, Math.floor(chi2Random(1))))];
+  result += suffix[Math.max(0, Math.min(suffix.length - 1, Math.floor(chi2Random(1) / 2)))];
 
   return result;
 }
