@@ -4,11 +4,9 @@ $twitter-color: #1da1f2;
 
 body {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 200px;
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
 }
 
 header {
@@ -20,7 +18,7 @@ header {
   color: white;
 
   h1 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
   }
 }
