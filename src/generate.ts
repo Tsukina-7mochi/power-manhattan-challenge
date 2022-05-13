@@ -1,6 +1,8 @@
 const chars = ['パ', 'ワ', 'ー', 'マ', ['ン', 'ソ'], 'ハ', 'ッ', 'タ', ['ン', 'ソ']];
 const suffix = [['大学'], ['大聖堂']];
 
+// charsのそれぞれの最初の1文字 or 1要素目を取り出して結合
+const charsFlatMap = (arr: (string | string[])[]): string => arr.map((charOrArr) => charOrArr[0]).join('');
 const normalRandom = (mean: number, var_: number) =>
 	(Math.sqrt(-2 * Math.log(Math.random())) * Math.cos(2 * Math.PI * Math.random()) + mean) * var_;
 const chi2Random   = (k: number) => new Array(k).fill(0).map(_ => normalRandom(0, 1) ** 2).reduce((acc, cur) => acc + cur, 0);
@@ -15,7 +17,11 @@ const generate = function() {
     if(typeof charOrArr === 'string') {
       result += charOrArr;
     } else {
-      result += charOrArr[Math.max(0, Math.min(charOrArr.length - 1, Math.floor(chi2Random(1) / 2)))];
+      if(i >= 2 && result.slice(-2) === charsFlatMap(chars.slice(index - 2, index))) {
+        result += charOrArr[Math.max(0, Math.min(charOrArr.length - 1, Math.floor(chi2Random(1) / 2)))];
+      } else {
+        result += charOrArr[0];
+      }
     }
   }
 
