@@ -8,7 +8,8 @@ const chi2Random   = (k: number) => new Array(k).fill(0).map(_ => normalRandom(0
 const generate = function() {
   let result = '';
   for(let i = 0; i < chars.length; i++) {
-    const index = Math.max(0, Math.min(chars.length - 1, Math.floor(i + normalRandom(0, 2))));
+    const random = normalRandom(0, 2);
+    const index = Math.max(0, Math.min(chars.length - 1, Math.floor(Math.abs(i + random)) * Math.sign(i + random)));
     const charOrArr = chars[index];
 
     if(typeof charOrArr === 'string') {
