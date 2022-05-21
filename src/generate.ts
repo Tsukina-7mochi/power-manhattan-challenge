@@ -26,7 +26,7 @@ const generate = function() {
     }
   }
 
-  result += arrTakeRandom(suffix[Math.max(0, Math.min(suffix.length - 1, Math.floor(chi2Random(1) / 2)))]);
+  result += arrTakeRandom(suffix[Math.max(0, Math.min(suffix.length - 1, Math.floor(chi2Random(1) / 1.5)))]);
 
   return result;
 }
