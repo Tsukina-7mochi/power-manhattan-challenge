@@ -1,5 +1,5 @@
 const chars = ['パ', 'ワ', 'ー', 'マ', ['ン', 'ソ'], 'ハ', 'ッ', 'タ', ['ン', 'ソ']];
-const suffix = [['大学'], ['大聖堂', '大丈夫', '大根', '犬学', '大仏']];
+const suffix = [['大学'], ['大聖堂', '大丈夫', '大根', '犬学', '大仏', '大将軍']];
 
 // charsのそれぞれの最初の1文字 or 1要素目を取り出して結合
 const charsFlatMap = (arr: (string | string[])[]): string => arr.map((charOrArr) => charOrArr[0]).join('');
