@@ -1,4 +1,5 @@
-import generate from './generate.ts';
+import generate from './generate';
+// import generate from './generate.ts';
 
 const str = 'パワーマンハッタン';
 const hitTarget = 'パワーマンハッタン大学';
