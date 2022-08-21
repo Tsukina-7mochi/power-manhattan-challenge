@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Tsukina-7mochi/workflow-webpack-test.git"
+    "url": "git+ssh://git@github.com/Tsukina-7mochi/power-manhattan-challenge.git"
   },
   "author": "Tsukina-7mochi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tsukina-7mochi/workflow-webpack-test/issues"
+    "url": "https://github.com/Tsukina-7mochi/power-manhattan-challenge/issues"
   },
-  "homepage": "https://github.com/Tsukina-7mochi/workflow-webpack-test#readme",
+  "homepage": "https://github.com/Tsukina-7mochi/power-manhattan-challenge#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.2.4",
