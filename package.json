@@ -21,16 +21,16 @@
   "devDependencies": {
     "clean-webpack-plugin": "4.0.0",
     "copy-webpack-plugin": "11.0.0",
-    "css-loader": "6.7.3",
-    "eslint": "8.40.0",
+    "css-loader": "6.8.1",
+    "eslint": "8.41.0",
     "license-checker": "25.0.1",
     "sass": "1.62.1",
-    "sass-loader": "13.2.2",
-    "style-loader": "3.3.2",
-    "ts-loader": "9.4.2",
+    "sass-loader": "13.3.1",
+    "style-loader": "3.3.3",
+    "ts-loader": "9.4.3",
     "typescript": "5.0.4",
-    "webpack": "5.82.0",
+    "webpack": "5.84.1",
     "webpack-cli": "5.1.1",
-    "webpack-merge": "5.8.0"
+    "webpack-merge": "5.9.0"
   }
 }
